@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.nav {
+  height: 20rem;
+  width: 100vw;
+  background: black;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.2rem;
+  padding-inline: 9.4rem;
+}
+.nav .logo {
+  color: white;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+.nav__list {
+  display: flex;
+  gap: 3.2rem;
+}
+.nav__list-link {
+  color: white;
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=main.css.map */

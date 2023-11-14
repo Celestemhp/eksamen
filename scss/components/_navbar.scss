@@ -1,0 +1,28 @@
+.nav {
+  height: 20rem;
+  width: 100vw;
+  background: black;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.2rem;
+    padding-inline: 9.4rem;
+  }
+
+  .logo {
+    color: white;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3.2rem;
+
+    &-link {
+      color: white;
+      font-size: 1.8rem;
+    }
+  }
+}
