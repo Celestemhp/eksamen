@@ -1,0 +1,62 @@
+.footer {
+  background-color: var(--purple-900);
+  height: 44rem;
+  margin-inline: var(--margin-inline-mobile);
+
+  @media (width: 768px) {
+    height: 22rem;
+    margin-inline: var(--margin-inline-desktop);
+  }
+
+  &.__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .footer__logo {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      justify-content: center;
+
+      img {
+        width: var(--logoWidth-md);
+        align-self: center;
+        color: var(--dark-100);
+        width: 5.8rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: var(--dark-100);
+        font-family: "Libre Baskerville", serif;
+      }
+    }
+
+    &.__nav {
+      &.-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &.-item {
+          display: flex;
+          flex-direction: row;
+
+          .footer__list {
+            ul {
+              display: flex;
+              flex-direction: column;
+
+              li {
+                a {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

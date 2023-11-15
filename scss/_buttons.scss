@@ -1,0 +1,28 @@
+.primary {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  //   width: 10rem;
+  height: 3rem;
+  background-color: var(--purple-500);
+  border-radius: var(--border-500);
+  padding-inline: 1.9rem;
+  padding-block: 1.7rem;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(color-dark-100);
+
+  &:active {
+    background-color: var(--purple-600);
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:disabled {
+    opacity: 0.33;
+  }
+}
