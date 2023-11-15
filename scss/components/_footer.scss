@@ -7,12 +7,12 @@ footer {
   z-index: 100;
   overflow: hidden;
 
-  //   background-image: url("images/bird-logo.png");
+  //   background-image: url("images/logo-icon-white.png");
   //   background-position: right;
   //   background-repeat: no-repeat;
 
   @media (min-width: 768px) {
-    height: 22rem;
+    // height: 22rem;
     padding-inline: var(--padding-inline-desktop);
     padding-block: var(--padding-block-desktop);
   }
@@ -21,6 +21,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-block: var(--padding-block-mobile);
     // padding-block: 3.75rem;
     gap: 3.75rem;
 
@@ -31,6 +32,7 @@ footer {
     @media (min-width: 768px) {
       flex-direction: row;
       justify-content: space-around;
+      padding-block: var(--padding-block-desktop);
     }
 
     .footer__logo {
@@ -83,6 +85,7 @@ footer {
 
           li {
             font-family: var(--font-heading);
+
             a {
               text-decoration: none;
               color: var(--dark-100);
@@ -93,16 +96,15 @@ footer {
           .contact {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 1rem;
+            font-size: 1.5rem;
+            font-weight: 300;
           }
           .social-links {
             display: flex;
             flex-direction: row;
             gap: 1.25rem;
-
-            a {
-              width: 3rem;
-            }
+            padding-top: 0.2rem;
           }
         }
       }
@@ -112,5 +114,9 @@ footer {
   .footer__folokon {
     border-top: 0.3px solid var(--dark-400);
     color: var(--dark-400);
+
+    h6 {
+      padding-block: 1.1rem;
+    }
   }
 }

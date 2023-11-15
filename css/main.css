@@ -124,11 +124,17 @@ h6 {
   height: 3rem;
   background-color: var(--purple-500);
   border-radius: var(--border-500);
-  padding-inline: 1.9rem;
-  padding-block: 1.7rem;
+  padding: 0.75rem 2rem;
+  transition: 0.35s opacity ease, 0.2s color ease;
+  cursor: pointer;
+  width: max-content;
+}
+.primary a {
   text-transform: uppercase;
+  font-family: var(--font-heading);
   font-weight: 600;
-  color: var(color-dark-100);
+  color: var(--dark-100);
+  text-decoration: none;
 }
 .primary:active {
   background-color: var(--purple-600);
@@ -218,6 +224,16 @@ h6 {
   }
 }
 
+.menu {
+  padding-inline: var(--padding-inline-mobile);
+  padding-block: var(--padding-block-mobile);
+}
+.menu .menu__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 footer {
   background: var(--purple-900);
   padding-inline: var(--padding-inline-mobile);
@@ -228,7 +244,6 @@ footer {
 }
 @media (min-width: 768px) {
   footer {
-    height: 22rem;
     padding-inline: var(--padding-inline-desktop);
     padding-block: var(--padding-block-desktop);
   }
@@ -237,12 +252,14 @@ footer .footer__main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-block: var(--padding-block-mobile);
   gap: 3.75rem;
 }
 @media (min-width: 768px) {
   footer .footer__main {
     flex-direction: row;
     justify-content: space-around;
+    padding-block: var(--padding-block-desktop);
   }
 }
 footer .footer__main .footer__logo {
@@ -304,19 +321,22 @@ footer .footer__main nav .footer__nav-container-item ul li a {
 footer .footer__main nav .footer__nav-container-item ul .contact {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 footer .footer__main nav .footer__nav-container-item ul .social-links {
   display: flex;
   flex-direction: row;
   gap: 1.25rem;
-}
-footer .footer__main nav .footer__nav-container-item ul .social-links a {
-  width: 3rem;
+  padding-top: 0.2rem;
 }
 footer .footer__folokon {
   border-top: 0.3px solid var(--dark-400);
   color: var(--dark-400);
+}
+footer .footer__folokon h6 {
+  padding-block: 1.1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
