@@ -4,12 +4,12 @@ footer {
   padding-inline: var(--padding-inline-mobile);
   padding-block: var(--padding-block-mobile);
   color: var(--dark-100);
-  z-index: 100;
+  z-index: 99;
   overflow: hidden;
 
-  //   background-image: url("images/logo-icon-white.png");
-  //   background-position: right;
-  //   background-repeat: no-repeat;
+  background-image: url("../images/logo-icon-dark.png");
+  background-position: right 75px center;
+  background-repeat: no-repeat;
 
   @media (min-width: 768px) {
     // height: 22rem;
@@ -29,7 +29,7 @@ footer {
     //   padding-block: 4.75rem;
     // }
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       flex-direction: row;
       justify-content: space-around;
       padding-block: var(--padding-block-desktop);
@@ -82,12 +82,12 @@ footer {
           flex-direction: column;
           list-style: none;
           gap: 1.25rem;
+          min-width: 11.6rem;
 
           li {
             font-family: var(--font-heading);
 
             a {
-              text-decoration: none;
               color: var(--dark-100);
               font-size: 1.5rem;
               font-weight: 300;
@@ -99,6 +99,7 @@ footer {
             gap: 1rem;
             font-size: 1.5rem;
             font-weight: 300;
+            min-width: 11.6rem;
           }
           .social-links {
             display: flex;
@@ -112,11 +113,12 @@ footer {
   }
 
   .footer__folokon {
-    border-top: 0.3px solid var(--dark-400);
+    // border-top: 0.3px solid var(--dark-400);
     color: var(--dark-400);
 
     h6 {
       padding-block: 1.1rem;
+      font-weight: 300;
     }
   }
 }
